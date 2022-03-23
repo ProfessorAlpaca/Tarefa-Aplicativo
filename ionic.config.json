@@ -1,0 +1,7 @@
+{
+  "name": "Ker Comer Projeto ",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
