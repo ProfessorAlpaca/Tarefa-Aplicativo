@@ -1,0 +1,15 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-nome-da-pagina',
+  templateUrl: './nome-da-pagina.page.html',
+  styleUrls: ['./nome-da-pagina.page.scss'],
+})
+export class NomeDaPaginaPage implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}
