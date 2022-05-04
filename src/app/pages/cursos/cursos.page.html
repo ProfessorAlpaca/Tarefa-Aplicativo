@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-title>Cursos São Lucas </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+<h3>Cursos da instituição</h3>
+<ion-list>
+  <ion-item *ngFor="let curso of cursosSaoLucas">
+    <ion-label>{{curso.nomeCurso}}</ion-label>
+    <ion-checkbox checked="{{curso.marcado}}" [(ngModel)]="curso.marcado" color="warning"></ion-checkbox>
+  </ion-item>
+</ion-list>
+<ion-button expand="block" (click)="exibircursosSaoLucas()">Exibir Cursos Selecionados</ion-button>
+
+</ion-content>

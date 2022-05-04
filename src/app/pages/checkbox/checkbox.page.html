@@ -1,0 +1,70 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="start">
+      <ion-menu-buttons></ion-menu-buttons>
+    </ion-buttons>
+    <ion-title>Responda o Quiz</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>Você quer responder o quiz?</ion-label>
+    <ion-checkbox disabled="true" checked="true"></ion-checkbox>
+  </ion-item>
+
+<ion-item>
+  <ion-label>Você conhece Juliette?</ion-label>
+  <ion-checkbox checked="true"></ion-checkbox>
+</ion-item>
+
+<ion-item>
+  <ion-label>Lembra da existência de Arthur Aguiar?</ion-label>
+  <ion-checkbox disabled="true"></ion-checkbox>
+</ion-item>
+
+<ion-item>
+  <ion-label>Gosta de música Brasileira?</ion-label>
+  <ion-checkbox></ion-checkbox>
+</ion-item>
+
+<ion-item>
+  <ion-label>Viu a mudança na posição do botão?</ion-label>
+  <ion-checkbox slot="start"></ion-checkbox>
+</ion-item>
+
+<ion-item>
+  <ion-label>Mudei a cor também, gostou?</ion-label>
+  <ion-checkbox slot="start" color="danger" checked="true"></ion-checkbox>
+</ion-item>
+
+<ion-item>
+  <ion-label>Eu gosto de azul claro, e você?</ion-label>
+  <ion-checkbox slot="start" color="secondary" checked="true" disabled="true"></ion-checkbox>
+</ion-item>
+
+<ion-item>
+  <ion-label>Roxo também é atraente, concorda?</ion-label>
+  <ion-checkbox color="tertiary"></ion-checkbox>
+</ion-item>
+
+<ion-item>
+  <ion-label>Nosso tempo está acabando, marque o último botão</ion-label>
+  <ion-checkbox color="warning"></ion-checkbox>
+</ion-item>
+
+<ion-item>
+  <ion-label>Quiz concluido, obrigado por participar</ion-label>
+  <ion-checkbox color="success" checked="true" disabled="true"></ion-checkbox>
+</ion-item>
+
+<h3>Meses do Ano</h3>
+<ion-list>
+  <ion-item *ngFor="let mes of mesesDoAno">
+    <ion-label>{{mes.nomeMes}}</ion-label>
+    <ion-checkbox checked="{{mes.marcado}}" [(ngModel)]="mes.marcado" color="danger"></ion-checkbox>
+  </ion-item>
+</ion-list>
+<ion-button expand="block" (click)="exibirMesesDoAno()">Exibir Resultado</ion-button>
+
+</ion-content>

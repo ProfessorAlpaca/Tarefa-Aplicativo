@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public appPages = [
+    { title: 'Cursos', url: '/cursos', icon: 'globe'},
+    { title: 'Checkbox', url: '/checkbox', icon: 'checkbox'},
+    { title: 'Card', url: '/card', icon: 'newspaper'},
     { title: 'Badge', url: '/badge', icon: 'list'},
     { title: 'Alerta', url: '/alert', icon: 'alert-circle'},
     { title: 'Action Sheet', url: '/actionsheet', icon: 'alert'},
