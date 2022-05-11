@@ -6,10 +6,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public appPages = [
+    { title: 'Scroll Alfabeto', url: '/scrollalfabeto', icon: 'language'},
+    { title: 'Formulario', url: '/formulario', icon: 'reader'},
+    { title: 'Infinit Scroll', url: '/infinitscrollionic', icon: 'infinite'},
+    { title: 'DateTime', url: '/datetime', icon: 'timer'},
+    { title: 'Input', url: '/input', icon: 'document-text' },
     { title: 'Cursos', url: '/cursos', icon: 'globe'},
     { title: 'Checkbox', url: '/checkbox', icon: 'checkbox'},
     { title: 'Card', url: '/card', icon: 'newspaper'},
-    { title: 'Badge', url: '/badge', icon: 'list'},
+    { title: 'Badge', url: '/badge', icon: 'list'}, 
     { title: 'Alerta', url: '/alert', icon: 'alert-circle'},
     { title: 'Action Sheet', url: '/actionsheet', icon: 'alert'},
     { title: 'Navegação', url: '/navegacao', icon: 'code' },

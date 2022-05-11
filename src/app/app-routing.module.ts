@@ -62,8 +62,26 @@ const routes: Routes = [
   {
     path: 'cursos',
     loadChildren: () => import('./pages/cursos/cursos.module').then( m => m.CursosPageModule)
+  },
+  {
+    path: 'input',
+    loadChildren: () => import('./pages/input/input.module').then( m => m.InputPageModule)
+  },
+  {
+    path: 'datetime',
+    loadChildren: () => import('./pages/datetime/datetime.module').then( m => m.DatetimePageModule)
+  },  {
+    path: 'infinitscrollionic',
+    loadChildren: () => import('./pages/infinitscrollionic/infinitscrollionic.module').then( m => m.InfinitscrollionicPageModule)
+  },
+  {
+    path: 'formulario',
+    loadChildren: () => import('./pages/formulario/formulario.module').then( m => m.FormularioPageModule)
+  },
+  {
+    path: 'scrollalfabeto',
+    loadChildren: () => import('./pages/scrollalfabeto/scrollalfabeto.module').then( m => m.ScrollalfabetoPageModule)
   }
-
 
 
 ];
